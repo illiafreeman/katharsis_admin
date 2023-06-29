@@ -516,6 +516,19 @@ body.body_login .container {
   padding-right: 16px;
 }
 
+.table {
+  font-size: 15px;
+}
+.table tr th {
+  font-weight: 400;
+  font-family: "demi", sans-serif;
+}
+.table tr td span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;

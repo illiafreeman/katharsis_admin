@@ -386,7 +386,27 @@ body {
     font-size: 14px;
     padding-right: 16px;
 }
+.table{
+    font-size: 15px;
+    
+    &-wrap{
 
+    }
+    tr{
+
+        th{
+            font-weight: 400;
+            font-family: $f700;
+        }
+        td{
+            span{
+                display: block;
+                font-size: 12px;
+                line-height: 14px
+            }
+        }
+    }
+}
 
 
 
