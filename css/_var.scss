@@ -12,29 +12,6 @@ $f750: 'bold', sans-serif;
 
 $text-color: #191F32;
 
-%flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-%flex-c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-%nolink{
-    &:before{
-        display: none;
-    }
-}
-
-%after{
-    content: '';
-    display: block;
-    position: absolute;
-}
 
 
 
