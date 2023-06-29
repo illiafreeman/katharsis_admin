@@ -477,6 +477,10 @@ body.body_login .container {
   opacity: 1;
 }
 
+.chart-wrap {
+  margin-bottom: 60px;
+}
+
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;
