@@ -181,6 +181,15 @@ body {
         display: inline-flex;
         margin: 0 auto;
     }
+    &_min{
+        height: 28px;
+        padding: 0 20px;
+        font-size: 14px;
+        &.act{
+            cursor: default;
+            pointer-events: none;
+        }
+    }
 }
 
 
@@ -278,13 +287,16 @@ body {
     font-family: $f700;
     font-size: 40px;
     line-height: 48px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &_h2{
         text-align: left;
         font-family: $f400;
         font-size: 20px;
         line-height: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 20px;
     }
 }
 .form {
@@ -339,11 +351,6 @@ body {
             color: #90949D;
             opacity: 1;
         }
-    }
-    
-    
-    .btn{
-        
     }
 }
 

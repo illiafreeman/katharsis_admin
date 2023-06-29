@@ -303,6 +303,15 @@ body.body_login .container {
   display: inline-flex;
   margin: 0 auto;
 }
+.btn_min {
+  height: 28px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+.btn_min.act {
+  cursor: default;
+  pointer-events: none;
+}
 
 .modal-bg {
   position: fixed;
@@ -400,14 +409,17 @@ body.body_login .container {
   font-family: "demi", sans-serif;
   font-size: 40px;
   line-height: 48px;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .title_h2 {
   text-align: left;
   font-family: "regular", sans-serif;
   font-size: 20px;
   line-height: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .form__label-group {
@@ -464,6 +476,7 @@ body.body_login .container {
   color: #90949D;
   opacity: 1;
 }
+
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;

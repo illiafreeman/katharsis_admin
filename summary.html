@@ -39,7 +39,14 @@
                 <h1 class="title">Summary</h1>
                 
                 <div class="chart-wrap">
-                    <h2 class="title title_h2">New users</h2>
+                    <h2 class="title title_h2">
+                        New users
+                        <div class="title__btn-group">
+                            <a href="" class="btn btn_min btn_light act">Day</a>
+                            <a href="" class="btn btn_min">Month</a>
+                            <a href="" class="btn btn_min">Year</a>
+                        </div>
+                    </h2>
                     <div class="chart"><!--div to reload chart-->
                         <canvas id="new_user_chart"></canvas>
                     </div>
@@ -67,16 +74,18 @@
     <script>
         const ctx = document.getElementById('new_user_chart');
         const data = {
-            labels: ['Mon', 'Tue', 'Wed', 'Thy', 'Fry', 'Sat', 'Sun'],
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat', 'Sun'],
             datasets: [{
                 label: 'New users',
-                data: [12, 19, 3, 5, 2, 3, 25]
+                data: [12, 19, 3, 5, 2, 3, 20]
             }]
         };
         new Chart(ctx, {
-            type: 'line',
+            type: 'bar',
             data: data,
+            
             options: {
+                backgroundColor: '#9346ed',
                 plugins: {
                     legend: {
                         display: false
