@@ -1,0 +1,54 @@
+$transition: all 0.2s ease-in-out;
+$transition005: all 0.05s ease-in-out;
+$transition05: all 0.5s ease-in-out;
+$transition1: all 1s ease-in-out;
+
+
+$f400: 'regular', sans-serif;
+$f450: 'medium', sans-serif;
+$f700: 'demi', sans-serif;
+$f750: 'bold', sans-serif;
+
+
+$text-color: #191F32;
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%nolink{
+    &:before{
+        display: none;
+    }
+}
+
+%after{
+    content: '';
+    display: block;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

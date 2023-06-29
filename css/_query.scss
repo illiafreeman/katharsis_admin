@@ -1,0 +1,222 @@
+@media only screen and (max-width: 1300px) {
+    .post-wrap{
+        .post-next{
+            right: -60px;
+        }
+        .post-prev{
+            left: -60px;
+        } 
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .aside {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #fff;
+        border-radius: 0px;
+        padding: 16px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;;
+    }
+    .logo {
+        display: block;
+        width: 102px;
+        height: 16px;
+        background: url(../img/logo_min.png) center center no-repeat;
+    }
+    .login, .app-group, hr{
+        display: none;
+    }
+    .main {
+        padding: 72px 0;
+    }
+    .btn.btn_head{
+        display: flex;
+        height: 40px;
+        padding: 0 24px;
+        font-family: $f450;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .page{
+        border-radius: 16px 16px 0px 0px;
+    }
+    .post{
+        margin-bottom: 40px;
+    }
+    .post__pic, .slick-list, .post__video, .post__audio {
+        border-radius: 0;
+    }
+    .post__action {
+        margin: 26px 0 18px;
+        padding: 0 15px;
+    }
+    .post__text{
+        padding: 0 15px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; 
+        position: relative;
+        &.full{
+            -webkit-line-clamp: initial; 
+        }
+    }
+    .post__all{
+        padding: 0 15px;
+    }
+    .post__more{
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: 1px;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #939AAE;
+        font-family: $f450;
+        cursor: pointer;
+        padding-left: 15px;
+        background: #fff;
+        transition: $transition;
+        &::before{
+            display: block;
+            content: '';
+            width: 40px;
+            height: 20px;
+            left: -40px;
+            top: 0;
+            position: absolute;
+            background: -moz-linear-gradient(left,  rgba(30,87,153,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+        }
+        &:hover{
+            text-decoration-line: none;
+            color: $text-color;
+        }
+    }
+    body.oh {
+        padding-right: 0;
+    }
+    .modal {
+        z-index: 1000;
+        left: calc(50%);
+        width: 340px;
+    }
+    .modal-bg.vis{
+        z-index: 1000;
+    }
+    .modal__body {
+        padding: 50px;
+    }
+    .modal__close {
+        top: 16px;
+        right: 16px;
+    }
+    .modal__logo {
+        background: url(../img/logo_min_modal.png) center center no-repeat;
+        width: 154px;
+        height: 24px;
+        margin: 0 auto 24px;
+    }
+    .modal__desc{
+        display: none;
+    }
+    .modal__desc_min{
+        display: block;
+        width: auto;
+        margin-bottom: 24px;
+    }
+    .modal__action {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .modal_btn {
+        width: 240px;
+    }
+    .post-wrap{
+        .post-next{
+            right: -100px;
+        }
+        .post-prev{
+            left: -100px;
+        } 
+    }
+}
+@media only screen and (max-width: 900px) {
+    .post-wrap{
+        padding: 0 80px;
+    }
+    .post-wrap{
+        .post-next{
+            right: -0px;
+        }
+        .post-prev{
+            left: -0px;
+        } 
+    }
+    .post__head_single{
+        margin: 0 10px 16px;
+        padding: 5px !important;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .container{
+        width: 100%;
+        padding: 32px 0 0;
+    }
+    .user__main{
+        padding: 0 28px;
+    }
+    .user__about, .user__action{
+        padding: 0 15px;
+    }
+    .user__nick {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .page {
+        background: url(../img/page_bg_min.png) left top/100% no-repeat;
+    }
+    .user__ava {
+        min-width: 120px;
+    }
+    .user__follow-count {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 2px;
+    }
+    .user__follow-label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .user__about{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .user__action {
+        margin: 24px 0 32px;
+    }
+    .btn{
+        height: 40px;
+        padding: 0 12px;
+    }
+    .tab{
+        padding: 0 15px;
+        margin-bottom: 24px;
+    }
+    .btn_center{
+        width: calc(100% - 30px);
+    }
+    
+    .post__head {
+        padding: 0 15px;
+    }
+}    
