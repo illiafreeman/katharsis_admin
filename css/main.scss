@@ -85,7 +85,7 @@ body {
 .container{
     width: 640px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 140px;
 }
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
@@ -258,7 +258,11 @@ body {
         cursor: pointer;
     }
 }
-
+.title{
+    text-align: center;
+    font-family: $f700;
+    font-size: 40px;
+}
 
 
 
