@@ -288,15 +288,16 @@ body {
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     &_h2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         text-align: left;
         font-family: $f400;
-        font-size: 20px;
+        font-size: 26px;
         line-height: 40px;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
     }
 }
 .form {
