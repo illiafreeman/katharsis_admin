@@ -357,12 +357,35 @@ body {
 .chart-wrap{
     margin-bottom: 60px;
 }
-
-
-
-
-
-
+.daterange-input{
+    height: 28px;
+    padding: 0 16px;
+    font-size: 14px;
+    border: 1px solid #959191;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.daterangepicker .drp-buttons .btn{
+    height: 28px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+.daterangepicker td.active.in-range {
+    background-color: #a472ec !important;
+}
+.daterangepicker td.in-range {
+    background-color: #fbe9ff;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+    background-color: #f6ccff;
+}
+.daterangepicker .drp-selected {
+    font-size: 14px;
+    padding-right: 16px;
+}
 
 
 
