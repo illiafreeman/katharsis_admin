@@ -217,7 +217,7 @@ body.body_login .container {
 }
 
 .container {
-  width: 640px;
+  width: 1000px;
   margin: 0 auto;
   padding-top: 140px;
 }
@@ -400,6 +400,13 @@ body.body_login .container {
   font-family: "demi", sans-serif;
   font-size: 40px;
   line-height: 48px;
+  margin-bottom: 60px;
+}
+.title_h2 {
+  text-align: left;
+  font-family: "regular", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
   margin-bottom: 60px;
 }
 

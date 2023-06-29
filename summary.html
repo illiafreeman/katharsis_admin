@@ -37,6 +37,13 @@
         <article class="page">
             <div class="container">
                 <h1 class="title">Summary</h1>
+                
+                <div class="chart-wrap">
+                    <h2 class="title title_h2">New users</h2>
+                    <div class="chart"><!--div to reload chart-->
+                        <canvas id="new_user_chart"></canvas>
+                    </div>
+                </div>
             </div>
         </article>
 
@@ -56,8 +63,34 @@
         </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('new_user_chart');
+        const data = {
+            labels: ['Mon', 'Tue', 'Wed', 'Thy', 'Fry', 'Sat', 'Sun'],
+            datasets: [{
+                label: 'New users',
+                data: [12, 19, 3, 5, 2, 3, 25]
+            }]
+        };
+        new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
     <script src="js/custom.js"></script>
-
 </body>
 
 </html>
