@@ -18,8 +18,8 @@
     <meta name="theme-color" content="#9747ff">
 
 
-
-    <link href="css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body class="body">
@@ -63,7 +63,10 @@
                         <canvas id="total_user_chart"></canvas>
                     </div>
                 </div>
-                <h2 class="title title_h2">Last actions</h2>
+                <h2 class="title title_h2">
+                    Last actions
+                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+                </h2>
                 <div class="table-wrap">
                     <table class="table">
                         <tr>
@@ -105,7 +108,9 @@
         </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script>
         const ctx = document.getElementById('new_user_chart');
         const ctx2 = document.getElementById('total_user_chart');
@@ -113,13 +118,13 @@
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat', 'Sun'],
             datasets: [{
                 label: 'New users',
-                data: [12, 19, 3, 5, 2, 3, 20]
+                data: [12, 15, 3, 5, 2, 3, 20]
             }]
         };
         const data2 = {
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat', 'Sun'],
             datasets: [{
-                label: 'New users',
+                label: 'Total users',
                 data: [4, 5, 10, 15, 2, 3, 20]
             }]
         };
@@ -158,6 +163,13 @@
                     }
                 }
             }
+        });
+    </script>
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            })
         });
     </script>
     <script src="js/custom.js"></script>

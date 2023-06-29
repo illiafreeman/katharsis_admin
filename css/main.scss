@@ -100,7 +100,7 @@ body {
 .container{
     width: 1000px;
     margin: 0 auto;
-    padding-top: 140px;
+    padding: 140px 0 240px;
 }
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
@@ -183,7 +183,7 @@ body {
     }
     &_min{
         height: 28px;
-        padding: 0 20px;
+        padding: 0 16px;
         font-size: 14px;
         &.act{
             cursor: default;
@@ -296,7 +296,7 @@ body {
         text-align: left;
         font-family: $f400;
         font-size: 26px;
-        line-height: 40px;
+        line-height: 26px;
         margin-bottom: 30px;
     }
 }

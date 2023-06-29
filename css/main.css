@@ -219,7 +219,7 @@ body.body_login .container {
 .container {
   width: 1000px;
   margin: 0 auto;
-  padding-top: 140px;
+  padding: 140px 0 240px;
 }
 
 .page {
@@ -305,7 +305,7 @@ body.body_login .container {
 }
 .btn_min {
   height: 28px;
-  padding: 0 20px;
+  padding: 0 16px;
   font-size: 14px;
 }
 .btn_min.act {
@@ -418,7 +418,7 @@ body.body_login .container {
   text-align: left;
   font-family: "regular", sans-serif;
   font-size: 26px;
-  line-height: 40px;
+  line-height: 26px;
   margin-bottom: 30px;
 }
 
