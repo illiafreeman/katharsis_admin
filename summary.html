@@ -37,7 +37,7 @@
         <article class="page">
             <div class="container">
                 <h1 class="title">Summary</h1>
-                <div class="chart-wrap">
+                <div class="chart-wrap"><!--div to reload chart-->
                     <h2 class="title title_h2">
                         New users
                         <div class="title__btn-group">
@@ -46,11 +46,11 @@
                             <a href="" class="btn btn_min">Year</a>
                         </div>
                     </h2>
-                    <div class="chart"><!--div to reload chart-->
+                    <div class="chart">
                         <canvas id="new_user_chart"></canvas>
                     </div>
                 </div>
-                <div class="chart-wrap">
+                <div class="chart-wrap"><!--div to reload chart-->
                     <h2 class="title title_h2">
                         Total users
                         <div class="title__btn-group">
@@ -59,10 +59,11 @@
                             <a href="" class="btn btn_min">Year</a>
                         </div>
                     </h2>
-                    <div class="chart"><!--div to reload chart-->
+                    <div class="chart">
                         <canvas id="total_user_chart"></canvas>
                     </div>
                 </div>
+                <h2 class="title title_h2">Last actions</h2>
             </div>
         </article>
 
@@ -97,7 +98,7 @@
             labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fry', 'Sat', 'Sun'],
             datasets: [{
                 label: 'New users',
-                data: [12, 19, 3, 5, 2, 3, 20]
+                data: [4, 5, 10, 15, 2, 3, 20]
             }]
         };
         new Chart(ctx, {
