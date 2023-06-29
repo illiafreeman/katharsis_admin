@@ -22,33 +22,45 @@
     <link href="css/main.css" rel="stylesheet" />
 </head>
 
-<body class="body">
-    <aside class="aside">
-        <a href="#" class="logo" title="logo"></a>
+<body class="body body_login">
 
-    </aside>
-    <main class="main">
+    <main class="main ">
         <article class="page">
             <div class="container">
                 <h1 class="title">Login</h1>
+                <div class="form">
+                    <form action="">
+                        <fieldset class="form__label-group has-error">
+                            <input type="text" id="login" class="form__control" placeholder="Login" value="">
+                            <div class="form__error-text">Login is invalid</div>
+                        </fieldset>
+                        <fieldset class="form__label-group">
+                            <input type="password" id="pass" class="form__control" placeholder="Password" value="">
+                            <div class="form__error-text">Password is invalid</div>
+                        </fieldset>
+                        <fieldset class="form__label-group">
+                            <input type="password" id="conf" class="form__control" placeholder="Confirmation code" value="">
+                            <div class="form__error-text">Confirmation code is invalid</div>
+                        </fieldset>
+                        <div class="form__error-message">
+                            <svg>
+                                <use xlink:href="./img/sprite.svg#icon-exclamation-triangle"></use>
+                            </svg>
+                            Ошибка проверки Confirmation code. Пожалуйста, обновите страницу и попробуйте еще раз.
+                        </div>
+                        <div class="ac">
+                            <button type="submit" class="btn">
+                                Log in
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </article>
 
 
     </main>
-    <div class="modal-bg"></div>
-    <div class="modal">
-        <div class="modal__body">
-            <div class="modal__logo"></div>
-            <div class="modal__desc">If you want to see more information, download Katharsis App:</div>
-            <div class="modal__desc modal__desc_min">Download App:</div>
-            <div class="modal__action">
-                <a href="" class="modal_btn modal_btn-app"></a>
-                <a href="" class="modal_btn modal_btn-pla"></a>
-            </div>
-            <div class="modal__close"></div>
-        </div>
-    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/custom.js"></script>
 

@@ -38,6 +38,21 @@ body {
     color: $text-color;
     font-size: 18px;
     line-height: 22px;
+    &.body_login{
+        background: url(../img/page_bg.png) left top / 100% no-repeat;
+        background-attachment: fixed;
+        .main{
+            padding: 0;
+        }
+        .page{
+            padding: 0;
+            background: none;
+        } 
+        .container{
+            width: 400px;
+            padding-bottom: 50px;
+        }
+    }
 }
 .aside{
     position: fixed;
@@ -262,7 +277,70 @@ body {
     text-align: center;
     font-family: $f700;
     font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 60px;
 }
+.form {
+    &__label-group {
+        border: 0;
+        padding: 0;
+        margin: 0 0 16px;
+        &.has-error{
+            .form__error-text{
+                display: block;
+            }
+            .form__control{
+                border-color: #c80d4a;
+            }
+        }
+    }
+    &__error-text {
+        display: none;
+        margin-top: 5px;
+        padding: 0 30px;
+        color: #c80d4a;
+        font-size: 16px;
+    }
+    &__error-message {
+        border-radius: 16px;
+        font-size: 16px;
+        line-height: 20px;
+        border: 1px solid #c80d4a;
+        padding: 15px 30px 20px;
+        color: #c80d4a;
+        background: rgba(200, 13, 74, .05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 16px;
+        svg{
+            fill: #c80d4a;
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__control {
+        width: 100%;
+        border-radius: 16px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 20px;
+        border: 1px solid #EAAAFA;
+        padding: 0 30px;
+        &::placeholder{
+            color: #90949D;
+            opacity: 1;
+        }
+    }
+    
+    
+    .btn{
+        
+    }
+}
+
+
 
 
 
