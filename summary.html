@@ -19,6 +19,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
@@ -41,9 +42,9 @@
                     <h2 class="title title_h2">
                         New users
                         <div class="title__btn-group">
-                            <a href="" class="btn btn_min btn_light act">Day</a>
-                            <a href="" class="btn btn_min">Month</a>
-                            <a href="" class="btn btn_min">Year</a>
+                            <div class="btn btn_min btn_light act">Day</div>
+                            <div class="btn btn_min">Month</div>
+                            <div class="btn btn_min">Year</div>
                         </div>
                     </h2>
                     <div class="chart">
@@ -54,9 +55,9 @@
                     <h2 class="title title_h2">
                         Total users
                         <div class="title__btn-group">
-                            <a href="" class="btn btn_min btn_light act">Day</a>
-                            <a href="" class="btn btn_min">Month</a>
-                            <a href="" class="btn btn_min">Year</a>
+                            <div class="btn btn_min btn_light act">Day</div>
+                            <div class="btn btn_min">Month</div>
+                            <div class="btn btn_min">Year</div>
                         </div>
                     </h2>
                     <div class="chart">
@@ -65,7 +66,14 @@
                 </div>
                 <h2 class="title title_h2">
                     Last actions
-                    <input class="daterange-input" type="text" name="daterange" value="06/06/2023 - 06/23/2023" />
+                    <div>
+                        <select class="select2" name="state">
+                            <option value="AL">Alabama</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                        <input class="daterange-input" type="text" name="daterange" value="06/06/2023 - 06/23/2023" />
+                    </div>
+                    
                 </h2>
                 <div class="table-wrap">
                     <table class="table">
@@ -101,8 +109,8 @@
             <div class="modal__desc">If you want to see more information, download Katharsis App:</div>
             <div class="modal__desc modal__desc_min">Download App:</div>
             <div class="modal__action">
-                <a href="" class="modal_btn modal_btn-app"></a>
-                <a href="" class="modal_btn modal_btn-pla"></a>
+                <!-- <a href="" class="modal_btn modal_btn-app"></a>
+                <a href="" class="modal_btn modal_btn-pla"></a> -->
             </div>
             <div class="modal__close"></div>
         </div>
@@ -111,6 +119,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script>
         const ctx = document.getElementById('new_user_chart');
         const ctx2 = document.getElementById('total_user_chart');
@@ -171,6 +180,7 @@
                 opens: 'left'
             })
         });
+        $('.select2').select2();
     </script>
     <script src="js/custom.js"></script>
 </body>

@@ -10,7 +10,10 @@ $(document).ready(function () {
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    //$('.btn').click(modal);
+    $('.btn').click(function(e) {
+        e.preventDefault();
+        modal();
+    });
 });
 
 
