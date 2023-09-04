@@ -438,6 +438,47 @@ body {
                     text-decoration: none;
                 }
             }
+            .id{
+                width: 20px;
+                height: 20px;
+                fill: #e95050;
+                display: none;
+                &_pos{
+                    fill: #329532;
+                }
+                &.vis{
+                    display: block;
+                }
+            }
+            .ids{
+                display: none;
+                color: #e95050;
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    fill: #e95050;
+                    transition: $transition;
+                    
+                }
+                &:hover{
+                    svg{
+                        transform: scale(1.1);
+                    }
+                }
+                &_pos{
+                    color: #329532;
+                    svg{
+                        fill: #329532;
+                        
+                    }
+                }
+                &.vis{
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    cursor: pointer;
+                }
+            }
         }
     }
     &_user{
