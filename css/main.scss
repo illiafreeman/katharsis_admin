@@ -299,6 +299,9 @@ body {
         font-size: 26px;
         line-height: 26px;
         margin-bottom: 30px;
+        &-center{
+            justify-content: center;
+        }
         &-action{
             display: flex;
             gap: 20px;

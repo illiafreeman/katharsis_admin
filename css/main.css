@@ -422,6 +422,9 @@ body.body_login .container {
   line-height: 26px;
   margin-bottom: 30px;
 }
+.title_h2-center {
+  justify-content: center;
+}
 .title_h2-action {
   display: flex;
   gap: 20px;
