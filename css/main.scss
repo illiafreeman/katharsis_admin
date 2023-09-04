@@ -270,6 +270,7 @@ body {
     &__action {
         display: flex;
         gap: 16px;
+        justify-content: center;
     }
     &__close {
         width: 48px;

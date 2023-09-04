@@ -392,6 +392,7 @@ body.body_login .container {
 .modal__action {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 .modal__close {
   width: 48px;

@@ -5,14 +5,14 @@ $(document).ready(function () {
         $('.modal-bg').removeClass('vis');
         $('.modal').removeClass('vis');
     });
-    function modal(){
+    function minimodal(){
         $('body').addClass('oh');
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    $('.btn').click(function(e) {
+    $('.ids').click(function(e) {
         e.preventDefault();
-        //modal();
+        minimodal();
     });
 });
 
