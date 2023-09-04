@@ -381,7 +381,7 @@ body {
         }
     }
 }
-.chart-wrap{
+.article-wrap{
     margin-bottom: 60px;
 }
 .daterange-input{
@@ -445,13 +445,26 @@ body {
     background-color: #f9e6fe;
 }
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    background-color: #8030ea;
+    background-color: #c984f5;
     color: white;
 }
 .select2-results__option {
     padding: 3px 16px;
 }
-
+.search-wrap{
+    display: flex;
+    gap: 10px;  
+    input{
+        height: 28px;
+        padding: 0 16px;
+        font-size: 14px;
+        border: 1px solid #959191;
+        border-radius: 14px;
+    }
+    buttoN{
+            
+    }
+}
 
 
 

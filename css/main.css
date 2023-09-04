@@ -139,7 +139,7 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #191F32;
+  border: 1px solid #8E94A4;
   padding: 8px;
 }
 
@@ -503,7 +503,7 @@ body.body_login .container {
   opacity: 1;
 }
 
-.chart-wrap {
+.article-wrap {
   margin-bottom: 60px;
 }
 
@@ -569,7 +569,7 @@ body.body_login .container {
 }
 
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: #8030ea;
+  background-color: #c984f5;
   color: white;
 }
 
@@ -577,6 +577,17 @@ body.body_login .container {
   padding: 3px 16px;
 }
 
+.search-wrap {
+  display: flex;
+  gap: 10px;
+}
+.search-wrap input {
+  height: 28px;
+  padding: 0 16px;
+  font-size: 14px;
+  border: 1px solid #959191;
+  border-radius: 14px;
+}
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;

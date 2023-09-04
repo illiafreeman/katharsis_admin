@@ -38,7 +38,7 @@
         <article class="page">
             <div class="container">
                 <h1 class="title">Summary</h1>
-                <div class="chart-wrap"><!--div to reload chart-->
+                <article class="article-wrap"><!--div to reload chart-->
                     <h2 class="title title_h2">
                         New users
                         <div class="title__btn-group">
@@ -50,8 +50,8 @@
                     <div class="chart">
                         <canvas id="new_user_chart"></canvas>
                     </div>
-                </div>
-                <div class="chart-wrap"><!--div to reload chart-->
+                </article>
+                <article class="article-wrap"><!--div to reload chart-->
                     <h2 class="title title_h2">
                         Total users
                         <div class="title__btn-group">
@@ -63,56 +63,135 @@
                     <div class="chart">
                         <canvas id="total_user_chart"></canvas>
                     </div>
-                </div>
-                <h2 class="title title_h2">
-                    Last actions
-                    <div class="title_h2-action">
-                        <span class="select2-title">Who</span>
-                        <select class="select2" name="state">
-                            <option value="d" selected>All</option>
-                            <option value="AL">John Doe</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                            <option value="WY">werylongusername</option>
-                        </select>
-                        <input class="daterange-input" type="text" name="daterange" value="06/06/2023 - 06/23/2023" />
+                </article>
+                <article class="article-wrap">
+                    <h2 class="title title_h2">
+                        Last actions
+                        <div class="title_h2-action">
+                            <span class="select2-title">Who</span>
+                            <select class="select2" name="state">
+                                <option value="d" selected>All</option>
+                                <option value="AL">John Doe</option>
+                                <option value="WY">verylongusername</option>
+                                <option value="AL">John Doe Doe</option>
+                                <option value="WY">very long user nnnnnname</option>
+                            </select>
+                            <input class="daterange-input" type="text" name="daterange" value="06/06/2023 - 06/23/2023" />
+                        </div>
+                        
+                    </h2>
+                    <div class="table-wrap">
+                        <table class="table">
+                            <tr>
+                                <th>Date/Time</th>
+                                <th>Who</th>
+                                <th>Action</th>
+                                <th>Object</th>
+                            </tr>
+                            <tr>
+                                <td>01/01/2023<span>12:03:34</span></td>
+                                <td>A JavaScript component</td>
+                                <td>remove</td>
+                                <td>dates, times</td>
+                            </tr>
+                            <tr>
+                                <td>10/06/2023<span>12:03:34</span></td>
+                                <td>the Date Range Picker A JavaScript component</td>
+                                <td>add</td>
+                                <td>new dates by providing a callback function</td>
+                            </tr>
+                        </table>
                     </div>
-                    
-                </h2>
-                <div class="table-wrap">
-                    <table class="table">
+                </article>
+                <article class="article-wrap">
+                    <h2 class="title title_h2">
+                        Users
+                        <div class="title_h2-action">
+                            <form action="">
+                                <div class="search-wrap">
+                                    <input type="text" placeholder="Enter ID/Username/Email">
+                                    <button class="btn btn_min" type="button">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </h2>
+                    <div class="form__error-message">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-exclamation-triangle"></use>
+                        </svg>
+                        Никого не найдено. Пожалуйста, обновите страницу и попробуйте еще раз.
+                    </div>
+                    <table class="table table_user">
                         <tr>
-                            <th>Date/Time</th>
-                            <th>Who</th>
-                            <th>Action</th>
-                            <th>Object</th>
+                            <td colspan="2">
+                                <img src="./img/avatar.jpg" alt="" class="user__pic">
+                            </td>
                         </tr>
                         <tr>
-                            <td>01/01/2023<span>12:03:34</span></td>
-                            <td>A JavaScript component</td>
-                            <td>remove</td>
-                            <td>dates, times</td>
+                            <td>Name</td>
+                            <td>UserName</td>
                         </tr>
                         <tr>
-                            <td>10/06/2023<span>12:03:34</span></td>
-                            <td>the Date Range Picker A JavaScript component</td>
-                            <td>add</td>
-                            <td>new dates by providing a callback function</td>
+                            <td>ID</td>
+                            <td>2390457384756</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td>fcomponent</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><a href="mailto:fcomponent@gmail.com">fcomponent@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sex</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>Birth Date</td>
+                            <td>21.12.1984</td>
+                        </tr>
+                        <tr>
+                            <td>Identificated</td>
+                            <td>no</td>
+                        </tr>
+                        <tr>
+                            <td>Identify</td>
+                            <td>make remove</td>
+                        </tr>
+                        <tr>
+                            <td>Sign Up Date</td>
+                            <td>21.07.2023</td>
+                        </tr>
+                        <tr>
+                            <td>Last Activity</td>
+                            <td>21.07.2023</td>
+                        </tr>
+                        <tr>
+                            <td>Last IP Address</td>
+                            <td>1.1.1.1</td>
                         </tr>
                     </table>
-                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </article>
             </div>
         </article>
 
