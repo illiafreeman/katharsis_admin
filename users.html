@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Users</title>
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#9747ff">
+    <meta name="msapplication-TileColor" content="#9747ff">
+    <meta name="theme-color" content="#9747ff">
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="body">
+    <aside class="aside">
+        <a href="#" class="logo" title="logo"></a>
+        <nav class="aside__nav">
+            <a href="" class="btn">Summary</a>
+            <a href="" class="btn btn_light act">Users</a>
+            <a href="" class="btn">Identification</a>
+            <a href="" class="btn">Abuses</a>
+            <a href="" class="btn">Logout</a>
+        </nav>
+    </aside>
+    <main class="main">
+        <article class="page">
+            <div class="container">
+                <h1 class="title">Users</h1>
+                
+                <article class="article-wrap">
+                    <h2 class="title title_h2">
+                        Users
+                        <div class="title_h2-action">
+                            <form action="">
+                                <div class="search-wrap">
+                                    <input type="text" placeholder="Enter ID/Username/Email">
+                                    <button class="btn btn_min" type="button">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </h2>
+                    <div class="form__error-message">
+                        <svg>
+                            <use xlink:href="./img/sprite.svg#icon-exclamation-triangle"></use>
+                        </svg>
+                        Никого не найдено. Пожалуйста, обновите страницу и попробуйте еще раз.
+                    </div>
+                    <table class="table table_user">
+                        <tr>
+                            <td>User Avatar</td>
+                            <td>
+                                <img src="./img/avatar.jpg" alt="" class="user__pic">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>UserName</td>
+                        </tr>
+                        <tr>
+                            <td>ID</td>
+                            <td>2390457384756</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td>fcomponent</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><a href="mailto:fcomponent@gmail.com">fcomponent@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sex</td>
+                            <td>M</td>
+                        </tr>
+                        <tr>
+                            <td>Birth Date</td>
+                            <td>21.12.1984</td>
+                        </tr>
+                        <tr>
+                            <td>Language</td>
+                            <td>EN</td>
+                        </tr>
+                        <tr>
+                            <td>Time Zone</td>
+                            <td>UTC +3</td>
+                        </tr>
+                        <tr>
+                            <td>Identificated</td>
+                            <td>
+                                <svg class="id id_pos vis">
+                                    <use xlink:href="./img/sprite.svg#icon-check"></use>
+                                </svg>
+                                <svg class="id id_neg">
+                                    <use xlink:href="./img/sprite.svg#icon-cross"></use>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Identify</td>
+                            <td>
+                                <span class="ids ids_pos vis">
+                                    <svg>
+                                        <use xlink:href="./img/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    create
+                                </span>
+                                <span class="ids ids_neg">
+                                    <svg>
+                                        <use xlink:href="./img/sprite.svg#icon-cross"></use>
+                                    </svg>
+                                    remove
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sign Up Date</td>
+                            <td>21.07.2023</td>
+                        </tr>
+                        <tr>
+                            <td>Last Activity</td>
+                            <td>21.07.2023</td>
+                        </tr>
+                        <tr>
+                            <td>Last IP Address</td>
+                            <td>1.1.1.1</td>
+                        </tr>
+                    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </article>
+            </div>
+        </article>
+
+
+    </main>
+    <div class="modal-bg"></div>
+    <div class="modal">
+        <div class="modal__body">
+            <div class="modal__logo"></div>
+            <div class="modal__desc">If you want to see more information, download Katharsis App:</div>
+            <div class="modal__desc modal__desc_min">Download App:</div>
+            <div class="modal__action">
+                <!-- <a href="" class="modal_btn modal_btn-app"></a>
+                <a href="" class="modal_btn modal_btn-pla"></a> -->
+            </div>
+            <div class="modal__close"></div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

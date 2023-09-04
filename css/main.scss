@@ -429,7 +429,35 @@ body {
             span{
                 display: block;
                 font-size: 12px;
-                line-height: 14px
+                line-height: 14px;
+            }
+            a{
+                color: #9562dd;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &_user{
+        tr{
+            &:first-child{
+                td{
+                    text-align: center;
+                    img{
+                        border-radius: 32px;
+                    }
+                }
+            }
+            td{
+                &:first-child{
+                    text-align: right;
+                }
+                &:last-child{
+                    font-family: "medium", sans-serif;
+                }
+                
             }
         }
     }

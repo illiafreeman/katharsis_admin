@@ -139,7 +139,7 @@ table th {
 }
 
 table th, table td {
-  border: 1px solid #8E94A4;
+  border: 1px solid #959191;
   padding: 8px;
 }
 
@@ -553,6 +553,25 @@ body.body_login .container {
   display: block;
   font-size: 12px;
   line-height: 14px;
+}
+.table tr td a {
+  color: #9562dd;
+  text-decoration: underline;
+}
+.table tr td a:hover {
+  text-decoration: none;
+}
+.table_user tr:first-child td {
+  text-align: center;
+}
+.table_user tr:first-child td img {
+  border-radius: 32px;
+}
+.table_user tr td:first-child {
+  text-align: right;
+}
+.table_user tr td:last-child {
+  font-family: "medium", sans-serif;
 }
 
 .select2-container {
