@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('.modal-bg').addClass('vis');
         $('.modal').addClass('vis');
     }
-    $('.ids').click(function() {
+    $('.ids__action').click(function() {
         minimodal();
     });
 });

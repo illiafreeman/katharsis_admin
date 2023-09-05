@@ -442,21 +442,19 @@ body {
                     text-decoration: none;
                 }
             }
-            .id{
-                width: 20px;
-                height: 20px;
-                fill: #e95050;
-                display: none;
-                &_pos{
-                    fill: #329532;
-                }
-                &.vis{
-                    display: block;
-                }
-            }
+            
             .ids{
                 display: none;
                 color: #e95050;
+                &__text{
+                    color: $text-color;
+                }
+                &__action{
+                    
+                }
+                &__status{
+                    margin-left: -15px;
+                }
                 svg{
                     width: 20px;
                     height: 20px;
@@ -464,11 +462,7 @@ body {
                     transition: $transition;
                     
                 }
-                &:hover{
-                    svg{
-                        transform: scale(1.1);
-                    }
-                }
+
                 &_pos{
                     color: #329532;
                     svg{
@@ -476,10 +470,11 @@ body {
                         
                     }
                 }
+
                 &.vis{
                     display: flex;
                     align-items: center;
-                    gap: 6px;
+                    gap: 20px;
                     cursor: pointer;
                 }
             }

@@ -565,30 +565,21 @@ body.body_login .container {
 .table tr td a:hover {
   text-decoration: none;
 }
-.table tr td .id {
-  width: 20px;
-  height: 20px;
-  fill: #e95050;
-  display: none;
-}
-.table tr td .id_pos {
-  fill: #329532;
-}
-.table tr td .id.vis {
-  display: block;
-}
 .table tr td .ids {
   display: none;
   color: #e95050;
+}
+.table tr td .ids__text {
+  color: #191F32;
+}
+.table tr td .ids__status {
+  margin-left: -15px;
 }
 .table tr td .ids svg {
   width: 20px;
   height: 20px;
   fill: #e95050;
   transition: all 0.2s ease-in-out;
-}
-.table tr td .ids:hover svg {
-  transform: scale(1.1);
 }
 .table tr td .ids_pos {
   color: #329532;
@@ -599,7 +590,7 @@ body.body_login .container {
 .table tr td .ids.vis {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 20px;
   cursor: pointer;
 }
 .table_user tr:first-child td {

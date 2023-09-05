@@ -98,28 +98,21 @@
                         <tr>
                             <td>Identificated</td>
                             <td>
-                                <svg class="id id_pos ">
-                                    <use xlink:href="./img/sprite.svg#icon-check"></use>
-                                </svg>
-                                <svg class="id id_neg vis">
-                                    <use xlink:href="./img/sprite.svg#icon-cross"></use>
-                                </svg>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Identify</td>
-                            <td>
-                                <span class="ids ids_pos vis">
+                                <span class="ids ids_pos">
                                     <svg>
                                         <use xlink:href="./img/sprite.svg#icon-check"></use>
                                     </svg>
-                                    create
+                                    <span class="ids__status">YES</span>
+                                    <span class="ids__text">but you can</span>
+                                    <button type="button" class="ids__action btn btn_min">Remove Identification</button>
                                 </span>
-                                <span class="ids ids_neg">
+                                <span class="ids ids_neg vis">
                                     <svg>
                                         <use xlink:href="./img/sprite.svg#icon-cross"></use>
                                     </svg>
-                                    remove
+                                    <span class="ids__status">NO</span>
+                                    <span class="ids__text">but you can</span>
+                                    <button type="button" class="ids__action btn btn_min">Identify</button>
                                 </span>
                             </td>
                         </tr>
