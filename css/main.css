@@ -593,7 +593,6 @@ body.body_login .container {
   display: flex;
   align-items: center;
   gap: 20px;
-  cursor: pointer;
 }
 .table_user tr:first-child td {
   text-align: center;
