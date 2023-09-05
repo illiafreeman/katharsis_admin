@@ -417,6 +417,9 @@ body {
     font-size: 14px;
     padding-right: 16px;
 }
+.invis{
+    display: none;
+}
 .table{
     font-size: 15px;
     
@@ -430,6 +433,11 @@ body {
             font-family: $f700;
         }
         td{
+            .btn{
+                color: #fff;
+                text-decoration: none;
+                margin-left: 10px;
+            }
             span{
                 display: block;
                 font-size: 12px;
@@ -441,6 +449,7 @@ body {
                 &:hover{
                     text-decoration: none;
                 }
+                
             }
             
             .ids{
