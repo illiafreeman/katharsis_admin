@@ -574,6 +574,8 @@ body.body_login .container {
 }
 .table tr td .ids__status {
   margin-left: -15px;
+  font-size: 14px;
+  font-family: "demi", sans-serif;
 }
 .table tr td .ids svg {
   width: 20px;
