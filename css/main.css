@@ -582,7 +582,7 @@ body.body_login .container {
   color: #191F32;
 }
 .table tr td .ids__status {
-  margin-left: -15px;
+  margin-left: 5px;
   font-size: 14px;
   font-family: "demi", sans-serif;
 }
@@ -601,7 +601,6 @@ body.body_login .container {
 .table tr td .ids.vis {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 .table_user tr:first-child td {
   text-align: center;
