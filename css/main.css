@@ -738,7 +738,7 @@ body.body_login .container {
   }
   .nav {
     display: flex;
-    gap: 40px;
+    gap: 50px;
   }
   .aside__nav {
     flex-direction: row;
@@ -950,7 +950,6 @@ body.body_login .container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
     padding: 36px 26px;
     gap: 40px;
     z-index: 10000;
@@ -958,7 +957,7 @@ body.body_login .container {
     visibility: visible;
     align-items: flex-end;
     overflow-y: scroll;
-    border-top: 1px solid #df9df8;
+    background: #fff url(../img/page_bg.png) left top/100% 600px no-repeat;
   }
   .lang {
     order: 1;
