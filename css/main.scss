@@ -311,6 +311,11 @@ body {
         margin-bottom: 30px;
         &-center{
             justify-content: center;
+            flex-direction: row !important;
+            align-items: center !important;
+            .title_h2-action {
+                
+            }
         }
         &-action{
             display: flex;
@@ -379,6 +384,9 @@ body {
             fill: #c80d4a;
             width: 40px;
             height: 40px;
+        }
+        div{
+            text-align: center;
         }
     }
     &__control {
