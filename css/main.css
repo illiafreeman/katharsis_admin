@@ -573,7 +573,7 @@ body.body_login .container {
   min-width: 400px;
 }
 .table_ab tr td:nth-child(5) {
-  min-width: 300px;
+  min-width: 250px;
 }
 .table tr th {
   font-weight: 400;
