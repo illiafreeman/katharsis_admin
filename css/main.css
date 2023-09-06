@@ -222,7 +222,7 @@ body.body_login .container {
 .container {
   width: 1000px;
   margin: 0 auto;
-  padding: 140px 0 240px;
+  padding: 90px 0 240px;
 }
 
 .page {
@@ -441,7 +441,7 @@ body.body_login .container {
 }
 .title_h2-action .select2-title {
   display: block;
-  margin-right: -14px;
+  margin-right: 8px;
   font-size: 13px;
 }
 .title_h2-action .select2-container--default .select2-selection--single {
@@ -735,6 +735,7 @@ body.body_login .container {
   }
   .page {
     border-radius: 16px 16px 0px 0px;
+    background: url(../img/page_bg_min.png) left top/100% 200px no-repeat;
   }
   .main {
     padding: 72px 0;
@@ -979,6 +980,23 @@ body.body_login .container {
   .aside__nav .btn:last-child {
     margin: 30px 0 0;
   }
+  .container {
+    width: 100%;
+    padding: 60px 20px 90px;
+  }
+  .title {
+    text-align: center;
+    font-family: "demi", sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 50px;
+  }
+  .title_h2 {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    font-family: "regular", sans-serif;
+  }
 }
 @media only screen and (max-width: 900px) {
   .post-wrap {
@@ -995,6 +1013,19 @@ body.body_login .container {
     padding: 5px !important;
   }
 }
+@media only screen and (max-width: 768px) {
+  .title_h2-action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .select2-title {
+    text-align: left;
+  }
+  .select2-container, .daterange-input {
+    width: auto !important;
+    min-width: 260px;
+  }
+}
 @media only screen and (max-width: 640px) {
   .container {
     width: 100%;
@@ -1009,9 +1040,6 @@ body.body_login .container {
   .user__nick {
     font-size: 16px;
     line-height: 20px;
-  }
-  .page {
-    background: url(../img/page_bg_min.png) left top/100% no-repeat;
   }
   .user__ava {
     min-width: 120px;
@@ -1045,5 +1073,20 @@ body.body_login .container {
   }
   .post__head {
     padding: 0 15px;
+  }
+  .container {
+    padding: 40px 20px 90px;
+  }
+  .btn_min {
+    height: 28px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .title_h2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -103,7 +103,7 @@ body {
 .container{
     width: 1000px;
     margin: 0 auto;
-    padding: 140px 0 240px;
+    padding: 90px 0 240px;
 }
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
@@ -317,7 +317,7 @@ body {
             gap: 20px;
             .select2-title{
                 display: block;
-                margin-right: -14px;
+                margin-right: 8px;
                 font-size: 13px;
             } 
             .select2-container--default .select2-selection--single {
