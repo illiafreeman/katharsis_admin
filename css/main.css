@@ -942,6 +942,35 @@ body.body_login .container {
     opacity: 0;
     visibility: hidden;
   }
+  .nav.vis {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 36px 26px;
+    gap: 40px;
+    z-index: 10000;
+    opacity: 1;
+    visibility: visible;
+    align-items: flex-end;
+    overflow-y: scroll;
+    border-top: 1px solid #df9df8;
+  }
+  .lang {
+    order: 1;
+  }
+  .username {
+    order: 2;
+  }
+  .aside__nav {
+    flex-direction: column;
+    order: 3;
+    align-items: stretch;
+  }
 }
 @media only screen and (max-width: 900px) {
   .post-wrap {

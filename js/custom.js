@@ -13,6 +13,11 @@ $(document).ready(function () {
     $('.confirm').click(function() {
         minimodal();
     });
+    $('.menu-btn').click(function () {
+        $('.nav').toggleClass('vis');
+        $('body').toggleClass('oh');
+        $('#hamburger').toggleClass('open');
+    });
 });
 
 
