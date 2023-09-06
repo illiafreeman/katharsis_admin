@@ -56,6 +56,9 @@
             height: 28px;
             padding: 0 16px;
             font-size: 14px;
+            &:last-child{
+                margin: 0 0 0 30px;
+            }
         }
     }
     .lang{
@@ -292,6 +295,11 @@
         flex-direction: column;
         order: 3;
         align-items: stretch;
+        .btn{
+            &:last-child{
+                margin: 30px 0 0;
+            }
+        }
     }
 
 
