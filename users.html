@@ -18,8 +18,7 @@
     <meta name="theme-color" content="#9747ff">
 
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
@@ -56,82 +55,83 @@
                         </svg>
                         Никого не найдено. Пожалуйста, обновите страницу и попробуйте еще раз.
                     </div>
-                    <table class="table table_user">
-                        <tr>
-                            <td>User Avatar</td>
-                            <td>
-                                <img src="./img/avatar.jpg" alt="" class="user__pic">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Name</td>
-                            <td>UserName <a href="" class="btn btn_min">Open profile</a></td>
-                        </tr>
-                        <tr>
-                            <td>ID</td>
-                            <td>
-                                2390457384756
-                                <button type="button" class="btn btn_min invis confirm">Delete account</button>
-                                <button type="button" class="btn btn_min confirm">Restore account</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Username</td>
-                            <td>fcomponent</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td><a href="mailto:fcomponent@gmail.com">fcomponent@gmail.com</a></td>
-                        </tr>
-                        <tr>
-                            <td>Sex</td>
-                            <td>M</td>
-                        </tr>
-                        <tr>
-                            <td>Birth Date</td>
-                            <td>21.12.1984</td>
-                        </tr>
-                        <tr>
-                            <td>Language</td>
-                            <td>EN</td>
-                        </tr>
-                        <tr>
-                            <td>Time Zone</td>
-                            <td>UTC +3</td>
-                        </tr>
-                        <tr>
-                            <td>Identificated</td>
-                            <td>
-                                <span class="ids ids_pos">
-                                    <svg>
-                                        <use xlink:href="./img/sprite.svg#icon-check"></use>
-                                    </svg>
-                                    <span class="ids__status">YES</span>
-                                    <button type="button" class="ids__action btn btn_min confirm">Remove Identification</button>
-                                </span>
-                                <span class="ids ids_neg vis">
-                                    <svg>
-                                        <use xlink:href="./img/sprite.svg#icon-cross"></use>
-                                    </svg>
-                                    <span class="ids__status">NO</span>
-                                    <button type="button" class="ids__action btn btn_min confirm">Identify</button>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Sign Up Date</td>
-                            <td>21.07.2023</td>
-                        </tr>
-                        <tr>
-                            <td>Last Activity</td>
-                            <td>21.07.2023</td>
-                        </tr>
-                        <tr>
-                            <td>Last IP Address</td>
-                            <td>1.1.1.1</td>
-                        </tr>
-                    </table>
-
+                    <div class="table-wrap">
+                        <table class="table table_user">
+                            <tr>
+                                <td>User Avatar</td>
+                                <td>
+                                    <img src="./img/avatar.jpg" alt="" class="user__pic">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>UserName <a href="" class="btn btn_min">Open profile</a></td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>
+                                    2390457384756
+                                    <button type="button" class="btn btn_min invis confirm">Delete account</button>
+                                    <button type="button" class="btn btn_min confirm">Restore account</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Username</td>
+                                <td>fcomponent</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><a href="mailto:fcomponent@gmail.com">fcomponent@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Sex</td>
+                                <td>M</td>
+                            </tr>
+                            <tr>
+                                <td>Birth Date</td>
+                                <td>21.12.1984</td>
+                            </tr>
+                            <tr>
+                                <td>Language</td>
+                                <td>EN</td>
+                            </tr>
+                            <tr>
+                                <td>Time Zone</td>
+                                <td>UTC +3</td>
+                            </tr>
+                            <tr>
+                                <td>Identificated</td>
+                                <td>
+                                    <span class="ids ids_pos">
+                                        <svg>
+                                            <use xlink:href="./img/sprite.svg#icon-check"></use>
+                                        </svg>
+                                        <span class="ids__status">YES</span>
+                                        <button type="button" class="ids__action btn btn_min confirm">Remove Identification</button>
+                                    </span>
+                                    <span class="ids ids_neg vis">
+                                        <svg>
+                                            <use xlink:href="./img/sprite.svg#icon-cross"></use>
+                                        </svg>
+                                        <span class="ids__status">NO</span>
+                                        <button type="button" class="ids__action btn btn_min confirm">Identify</button>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sign Up Date</td>
+                                <td>21.07.2023</td>
+                            </tr>
+                            <tr>
+                                <td>Last Activity</td>
+                                <td>21.07.2023</td>
+                            </tr>
+                            <tr>
+                                <td>Last IP Address</td>
+                                <td>1.1.1.1</td>
+                            </tr>
+                        </table>
+                    </div>
                 </article>
             </div>
         </article>
@@ -142,7 +142,7 @@
     <div class="modal">
         <div class="modal__body">
             <div class="modal__logo"></div>
-            <div class="modal__desc"> Are you sure?</div>
+            <div class="modal__desc">Are you sure?</div>
             <div class="modal__action">
                 <div class="btn">Yes</div>
                 <div class="btn btn_light">Cancel</div>

@@ -168,6 +168,13 @@ body {
             }
         }
     }
+    &_neg{
+        background: linear-gradient(41.19deg, #DB378C 9.55%, #FFD3E1 95.15%);
+        &:hover{
+            background: linear-gradient(41.19deg, #DB378C 9.55%, #FFD3E1 95.15%);
+            box-shadow: 0px 16px 32px rgba(232, 33, 192, 0.25);
+        }
+    }
     &_light-inactive {
         background: rgba(147, 154, 174, 0.1);
         color: #939AAE;
@@ -438,6 +445,12 @@ body {
                 text-decoration: none;
                 margin-left: 10px;
             }
+            .df{
+                gap: 10px;
+                .btn{
+                    margin: 0;
+                }
+            }
             span{
                 display: block;
                 font-size: 12px;
@@ -449,7 +462,6 @@ body {
                 &:hover{
                     text-decoration: none;
                 }
-                
             }
             
             .ids{
@@ -471,7 +483,6 @@ body {
                     height: 20px;
                     fill: #e95050;
                     transition: $transition;
-                    
                 }
 
                 &_pos{
