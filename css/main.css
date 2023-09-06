@@ -661,6 +661,36 @@ body.body_login .container {
   border: 1px solid #959191;
   border-radius: 14px;
 }
+.lang {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.lang a {
+  color: #fff;
+  display: flex;
+  text-decoration: underline;
+}
+.lang a:hover {
+  text-decoration: none;
+}
+.lang a.act {
+  text-decoration: none;
+  cursor: default;
+  font-family: "demi", sans-serif;
+  font-size: 25px;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "mrdium", sans-serif;
+  font-size: 18px;
+}
+
 @media only screen and (max-width: 1300px) {
   .post-wrap .post-next {
     right: -60px;
