@@ -432,7 +432,20 @@ body {
 }
 .table{
     font-size: 15px;
-    
+    &_id{
+        tr{
+            td:nth-child(4){
+                min-width: 400px;
+            }
+        }
+    }
+    &_ab{
+        tr{
+            td:nth-child(5){
+                min-width: 300px;
+            }
+        }
+    }
     &-wrap{
 
     }
@@ -588,7 +601,9 @@ body {
 .menu-btn {
     display: none;
 }
-
+.table-wrap{
+    overflow-x: auto;
+}
 
 
 

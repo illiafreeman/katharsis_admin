@@ -44,6 +44,12 @@ body.oh {
   align-items: center;
 }
 
+.dfcc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .m0a {
   margin: 0 auto;
 }
@@ -563,6 +569,12 @@ body.body_login .container {
 .table {
   font-size: 15px;
 }
+.table_id tr td:nth-child(4) {
+  min-width: 400px;
+}
+.table_ab tr td:nth-child(5) {
+  min-width: 300px;
+}
 .table tr th {
   font-weight: 400;
   font-family: "demi", sans-serif;
@@ -696,6 +708,10 @@ body.body_login .container {
 
 .menu-btn {
   display: none;
+}
+
+.table-wrap {
+  overflow-x: auto;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -867,7 +883,7 @@ body.body_login .container {
     margin: 0 auto 24px;
   }
   .modal__desc {
-    display: none;
+    width: auto;
   }
   .modal__desc_min {
     display: block;
