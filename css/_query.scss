@@ -268,26 +268,31 @@
         position: fixed;
         opacity: 0;
         visibility: hidden;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 36px 26px;
+        border-radius: 16px 16px 0px 0px;
+        gap: 40px;
         &.vis{
             display: flex;
             flex-direction: column;
             position: fixed;
-            top: 72px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            padding: 36px 26px;
-            gap: 40px;
+            
+            
             z-index: 10000;
             opacity: 1;
             visibility: visible;
             align-items: flex-end;
             overflow-y: scroll;
             background: #fff url(../img/page_bg.png) left top/100% 600px no-repeat;
+            transition: $transition05;
         }
     }   
     .lang {
         order: 1;
+        transition: $transition05;
     }
     .username {
         order: 2;
