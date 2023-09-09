@@ -719,6 +719,10 @@ body.body_login .container {
   overflow-x: auto;
 }
 
+.nav {
+  height: 100%;
+}
+
 @media only screen and (max-width: 1500px) {
   .container {
     width: 800px;
@@ -764,6 +768,7 @@ body.body_login .container {
   .nav {
     display: flex;
     gap: 50px;
+    align-items: center;
   }
   .aside__nav {
     flex-direction: row;
