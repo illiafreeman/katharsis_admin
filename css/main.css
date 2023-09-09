@@ -974,7 +974,7 @@ body.body_login .container {
     position: fixed;
     opacity: 0;
     visibility: hidden;
-    top: 72px;
+    top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -983,6 +983,7 @@ body.body_login .container {
     gap: 40px;
   }
   .nav.vis {
+    top: 72px;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -992,7 +993,7 @@ body.body_login .container {
     align-items: flex-end;
     overflow-y: scroll;
     background: #fff url(../img/page_bg.png) left top/100% 600px no-repeat;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   .lang {
     order: 1;

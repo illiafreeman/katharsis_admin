@@ -269,7 +269,7 @@
         position: fixed;
         opacity: 0;
         visibility: hidden;
-        top: 72px;
+        top: 100px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -277,6 +277,7 @@
         border-radius: 16px 16px 0px 0px;
         gap: 40px;
         &.vis{
+            top: 72px;
             display: flex;
             flex-direction: column;
             position: fixed;
@@ -286,7 +287,7 @@
             align-items: flex-end;
             overflow-y: scroll;
             background: #fff url(../img/page_bg.png) left top/100% 600px no-repeat;
-            transition: $transition05;
+            transition: $transition;
         }
     }   
     .lang {
