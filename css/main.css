@@ -1039,6 +1039,15 @@ body.body_login .container {
     flex-direction: column;
     align-items: flex-start;
   }
+  .title_action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .title_h2-action .df {
+    flex-direction: column;
+  }
   .select2-title {
     text-align: left;
   }
@@ -1118,5 +1127,8 @@ body.body_login .container {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+  .title_h2-action .df {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
