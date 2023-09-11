@@ -79,8 +79,12 @@
     .username svg {
         stroke: $text-color;
     }
-
-
+    .lang a img {
+        box-shadow: none;
+    }
+    .lang a{
+        text-shadow: none;
+    }
 
 
 

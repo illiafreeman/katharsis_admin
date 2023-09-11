@@ -591,17 +591,20 @@ body {
         align-items: center;
         text-decoration: none;
         transition: $transition;
+        text-shadow: 1px 1px 2px #692299;; 
         img{
             border-radius: 6px;
             margin-right: 4px;
-            
+            box-shadow: 0 0 6px 2px #692299; 
         }
         &:not(.act){
             font-size: 13px;
             opacity: .5;
+            text-shadow: none;
             img{
                 width: 24px;
                 border-radius: 4px;
+                box-shadow: none;
             }
             &:hover{
                 transform: scale(1.1);
