@@ -539,6 +539,7 @@ body.body_login .container {
   border: 1px solid #959191;
   border-radius: 14px;
   cursor: pointer;
+  min-width: 200px;
 }
 
 .daterangepicker .drp-buttons .btn {
@@ -701,6 +702,7 @@ body.body_login .container {
   border-radius: 6px;
   margin-right: 4px;
   box-shadow: 0 0 6px 2px #692299;
+  opacity: 0.7;
 }
 .lang a:not(.act) {
   font-size: 13px;
@@ -843,6 +845,13 @@ body.body_login .container {
   }
   .lang a {
     text-shadow: none;
+  }
+  .lang a.act {
+    font-size: 18px;
+    font-family: "medium", sans-serif;
+  }
+  .lang a.act img {
+    width: 34px;
   }
 }
 @media only screen and (max-width: 1100px) {

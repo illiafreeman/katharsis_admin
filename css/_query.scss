@@ -85,7 +85,13 @@
     .lang a{
         text-shadow: none;
     }
-
+    .lang a.act {
+        font-size: 18px;
+        font-family: $f450;
+        img{
+            width: 34px;
+        }
+    }
 
 
 

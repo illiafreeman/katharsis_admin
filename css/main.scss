@@ -413,6 +413,7 @@ body {
     border: 1px solid #959191;
     border-radius: 14px;
     cursor: pointer;
+    min-width: 200px;
 }
 .daterangepicker .drp-buttons .btn{
     height: 28px;
@@ -596,6 +597,7 @@ body {
             border-radius: 6px;
             margin-right: 4px;
             box-shadow: 0 0 6px 2px #692299; 
+            opacity: .7;
         }
         &:not(.act){
             font-size: 13px;
