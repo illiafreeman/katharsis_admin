@@ -28,10 +28,21 @@
         <a href="#" class="logo" title="logo"></a>
         <div class="nav">
             <div class="lang">
-                <a href="">RU</a>
-                <a class="act"href="">EN</a>
+                <a href="">
+                    <img src="./img/ru.png" alt="">
+                    RU
+                </a>
+                <a class="act"href="">
+                    <img src="./img/en.png" alt="">
+                    EN
+                </a>
             </div>
-            <div class="username">Super_Puper_Admin</div>
+            <div class="username">
+                <svg>
+                    <use xlink:href="./img/sprite.svg#icon-user"></use>
+                </svg>
+                Super_Puper_Admin
+            </div>
             <nav class="aside__nav">
                 <a href="summary.html" class="btn btn_light act">Summary</a>
                 <a href="users.html" class="btn">Users</a>
@@ -139,7 +150,7 @@
         </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://polyfill.io/v3/polyfill.js?features=ResizeObserver"></script>
+    <script type="text/javascript" src="https://polyfill.io/v3/polyfill.js?version=3.111.0&features=ResizeObserver"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
@@ -168,7 +179,8 @@
                 maintainAspectRatio: false,
                 backgroundColor: '#9346ed',
                 borderRadius: '20',
-                barThickness: '40',
+                //barThickness: '40',
+                barPercentage: 0.5,
                 plugins: {
                     legend: {
                         display: false

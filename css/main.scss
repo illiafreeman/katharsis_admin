@@ -584,12 +584,30 @@ body {
     justify-content: center;
     gap: 20px;
     margin-bottom: 60px;
+    align-items: center;
     a{
         color: #fff;
         display: flex;
-        text-decoration: underline;
+        align-items: center;
+        text-decoration: none;
+        transition: $transition;
+        img{
+            border-radius: 6px;
+            margin-right: 4px;
+            
+        }
+        &:not(.act){
+            font-size: 13px;
+            img{
+                width: 24px;
+                border-radius: 4px;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
         &:hover{
-            text-decoration: none;
+            
         }
         &.act{
             text-decoration: none;
@@ -605,6 +623,15 @@ body {
     color: #fff;
     font-family: "mrdium", sans-serif;
     font-size: 18px;
+    position: relative;
+    align-items: center;
+    svg{
+        fill: none;
+        stroke: #fff;
+        width: 24px;
+        height: 24px;
+        margin-right: 6px;
+    }
 }
 .menu-btn {
     display: none;

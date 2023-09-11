@@ -687,14 +687,28 @@ body.body_login .container {
   justify-content: center;
   gap: 20px;
   margin-bottom: 60px;
+  align-items: center;
 }
 .lang a {
   color: #fff;
   display: flex;
-  text-decoration: underline;
-}
-.lang a:hover {
+  align-items: center;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.lang a img {
+  border-radius: 6px;
+  margin-right: 4px;
+}
+.lang a:not(.act) {
+  font-size: 13px;
+}
+.lang a:not(.act) img {
+  width: 24px;
+  border-radius: 4px;
+}
+.lang a:not(.act):hover {
+  transform: scale(1.1);
 }
 .lang a.act {
   text-decoration: none;
@@ -709,6 +723,15 @@ body.body_login .container {
   color: #fff;
   font-family: "mrdium", sans-serif;
   font-size: 18px;
+  position: relative;
+  align-items: center;
+}
+.username svg {
+  fill: none;
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
 }
 
 .menu-btn {
