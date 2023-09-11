@@ -598,6 +598,7 @@ body {
         }
         &:not(.act){
             font-size: 13px;
+            opacity: .5;
             img{
                 width: 24px;
                 border-radius: 4px;
@@ -607,7 +608,7 @@ body {
             }
         }
         &:hover{
-            
+            opacity: 1;
         }
         &.act{
             text-decoration: none;

@@ -702,6 +702,7 @@ body.body_login .container {
 }
 .lang a:not(.act) {
   font-size: 13px;
+  opacity: 0.5;
 }
 .lang a:not(.act) img {
   width: 24px;
@@ -709,6 +710,9 @@ body.body_login .container {
 }
 .lang a:not(.act):hover {
   transform: scale(1.1);
+}
+.lang a:hover {
+  opacity: 1;
 }
 .lang a.act {
   text-decoration: none;
