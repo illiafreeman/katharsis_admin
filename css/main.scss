@@ -335,14 +335,19 @@ body {
             .select2-container .select2-selection--single .select2-selection__rendered {
                 display: flex;
                 align-items: center;
-                line-height: 14px;
+                line-height: 18px;
                 padding-left: 15px;
                 padding-right: 24px;
+                position: relative;
+                //bottom: 2px;
             }
             .select2-container--default .select2-selection--single .select2-selection__arrow {
                 right: 4px;
             }
-            
+            .daterange-input, .select2-container {
+                width: auto !important;
+                min-width: 200px;
+            }
         }
     }
 }
