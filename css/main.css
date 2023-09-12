@@ -674,6 +674,10 @@ body.body_login .container {
 
 .select2-results__option {
   padding: 3px 16px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .search-wrap {
