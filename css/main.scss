@@ -47,6 +47,7 @@ body {
         .page{
             padding: 0;
             background: none;
+            min-height: 100vh;
         } 
         .container{
             width: 400px;
@@ -103,7 +104,7 @@ body {
 .container{
     width: 1000px;
     margin: 0 auto;
-    padding: 90px 0 240px;
+    padding: 90px 0 0;
 }
 .page{
     background: url(../img/page_bg.png) left top / 100% no-repeat;
@@ -408,7 +409,7 @@ body {
         }
     }
 }
-.article-wrap{
+.article-wrap:not(:last-child){
     margin-bottom: 60px;
 }
 .daterange-input{
