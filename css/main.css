@@ -219,7 +219,7 @@ body.body_login .container {
   display: block;
   width: 218px;
   height: 48px;
-  background: url(../img/logo.svg) center center no-repeat;
+  background: url(../img/logo.svg) center center/contain no-repeat;
 }
 
 .main {
@@ -805,7 +805,7 @@ body.body_login .container {
     display: block;
     width: 102px;
     height: 16px;
-    background: url(../img/logo_min.png) center center no-repeat;
+    background: url(../img/logo_min.svg) left center/contain no-repeat;
   }
   .page {
     border-radius: 16px 16px 0px 0px;
