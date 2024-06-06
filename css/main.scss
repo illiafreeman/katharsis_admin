@@ -260,7 +260,7 @@ body {
     }
     &__logo {
         display: block;
-        background: url(../img/logo_color.png) center center no-repeat;
+        background: url(../img/logo_color.png) center center/contain no-repeat;
         width: 218px;
         height: 48px;
         margin: 0 auto 32px;
